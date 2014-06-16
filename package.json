@@ -1,0 +1,22 @@
+{
+    "name": "pads-app",
+    "description": "the best app",
+    "author": "Miroslav Rucka",
+    "version": "0.0.1",
+    "repository": {
+        "type": "github",
+        "url": "https://github.com/miroRucka/node.js-pads-examples"
+    },
+    "scripts": {
+        "start": "app.js"
+    },
+    "dependencies": {
+        "express": "4.4.3"
+    },
+    "devDependencies": {
+    },
+    "keywords": [
+        "pads, posam, showcase"
+    ],
+    "engine": "node >= 0.10.25"
+}
