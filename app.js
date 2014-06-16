@@ -1,13 +1,11 @@
-var http = require('http');
-
-var server = http.createServer(function (request, response) {
-    setTimeout(function(){
-        console.log('done: async task!')
-    }, 5000);
-    response.writeHead(200, {"Content-Type": "text/plain"});
-    response.end("Hello PADS!\n");
-
+fs = require('fs');
+var start = new Date().getTime();
+fs.readFile('angular.zip', function (err,data) {
+    console.log('data1 ', data);
+    console.log('data1 ', 'duration', new Date().getTime() - start, 'ms');
 });
-
-server.listen(8080);
-console.log("Server running at http://127.0.0.1:8080/");
+fs.readFile('angular.zip', function (err,data) {
+    console.log('data', data);
+    console.log('data2 ', 'duration', new Date().getTime() - start, 'ms');
+});
+console.log('do something else ', 'duration', new Date().getTime() - start, 'ms');
