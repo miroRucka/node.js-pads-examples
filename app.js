@@ -1,11 +1,9 @@
 fs = require('fs');
 var start = new Date().getTime();
-fs.readFile('angular.zip', function (err,data) {
-    console.log('data1 ', data);
-    console.log('data1 ', 'duration', new Date().getTime() - start, 'ms');
-});
-fs.readFile('angular.zip', function (err,data) {
-    console.log('data', data);
-    console.log('data2 ', 'duration', new Date().getTime() - start, 'ms');
-});
+var data1 = fs.readFileSync('angular.zip');
+console.log('data1 ', data1);
+console.log('data1 ', 'duration', new Date().getTime() - start, 'ms');
+var data2 = fs.readFileSync('angular.zip');
+console.log('data', data2);
+console.log('data2 ', 'duration', new Date().getTime() - start, 'ms');
 console.log('do something else ', 'duration', new Date().getTime() - start, 'ms');
