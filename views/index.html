@@ -9,9 +9,36 @@
 <body>
     <div class="container">
         <h3>HELLO PADS APP!</h3>
+        <div class="table"></div>
         </div>
     </div>
     <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/handlebars/handlebars.js"></script>
     <script src="js/pads.js"></script>
+    <!--handlebars template-->
+    <script class="template" type="text/x-handlebars-template" id="table">
+        <div class="bs-example">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Meno</th>
+                    <th>Pozícia</th>
+                    <th>Hoby</th>
+                </tr>
+                </thead>
+                <tbody>
+                {{#each users}}
+                <tr>
+                    <td>{{@index}}</td>
+                    <td>{{meno}}</td>
+                    <td>{{pozicia}}</td>
+                    <td>{{hoby}}</td>
+                </tr>
+                {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </script>
 </body>
 </html>
