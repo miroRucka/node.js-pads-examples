@@ -1,0 +1,12 @@
+{
+    "name": "pads-app",
+    "version": "0.0.1",
+    "publicPath": "public",
+    "dependencies": {
+        "bootstrap-css-only": "3.1.1",
+        "jquery": "2.1.1",
+        "handlebars": "1.3.0"
+    },
+    "devDependencies": {
+    }
+}
