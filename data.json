@@ -1,0 +1,17 @@
+[
+    {
+        "meno": "Miro",
+        "pozicia": "programator",
+        "hoby": ["sport", "foto"]
+    },
+    {
+        "meno": "Marek",
+        "pozicia": "programator",
+        "hoby": ["sport", "rybky"]
+    },
+    {
+        "meno": "Lubos",
+        "pozicia": "programator",
+        "hoby": ["sport", "auta"]
+    }
+]

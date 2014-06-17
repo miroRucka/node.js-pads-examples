@@ -1,12 +1,13 @@
 var express = require('express');
 var app = express();
 
-app.get('/', function(req, res){
-    res.send('Hello World');
+app.get('/', function (req, res) {
+    res.sendfile('index.html');
 });
 
-app.get('/pads', function(req, res){
-    res.send('Hello World Pads!');
+app.get('/api', function(req, res){
+    var data = require('./data.json');
+    res.json(data);
 });
 
 app.listen(8080);
