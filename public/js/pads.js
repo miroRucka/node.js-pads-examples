@@ -1,3 +1,4 @@
+/*global $:false, Handlebars:false*/
 (function(w){
     w.pads = function(){
         var _renderTemplate = function(id, data){
@@ -17,9 +18,10 @@
         return {
             render: _renderTemplate,
             data: _getData
-        }
+        };
     };
 }(window));
+
 
 var pads = pads();
 pads.data(function(data){

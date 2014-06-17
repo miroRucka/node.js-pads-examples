@@ -2,16 +2,16 @@
     {
         "meno": "Miro",
         "pozicia": "programator",
-        "hoby": ["sport", "foto"]
+        "hoby": ["foto"]
     },
     {
         "meno": "Marek",
         "pozicia": "programator",
-        "hoby": ["sport", "rybky"]
+        "hoby": ["rybky"]
     },
     {
         "meno": "Lubos",
         "pozicia": "programator",
-        "hoby": ["sport", "auta"]
+        "hoby": ["auta"]
     }
 ]
